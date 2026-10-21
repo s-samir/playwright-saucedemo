@@ -1,6 +1,6 @@
 # SauceDemo Automation Training Project (Playwright + TypeScript)
 
-Page Object Model, custom fixtures and `.env`-driven config for https://www.saucedemo.com.
+Page Object Model, automated tests suites, custom fixtures and `.env`-driven config for https://www.saucedemo.com.
 
 ## Setup
 

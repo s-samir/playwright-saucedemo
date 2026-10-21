@@ -1,0 +1,24 @@
+{
+  "name": "playwright-saucedemo",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript automation suite for https://www.saucedemo.com (Page Object Model, fixtures, .env)",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:chromium": "playwright test --project=chromium",
+    "snapshots:update": "playwright test tests/non-functional/visual.spec.ts --update-snapshots",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "codegen": "playwright codegen https://www.saucedemo.com"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.10.0",
+    "@playwright/test": "^1.56.0",
+    "@types/node": "^22.0.0",
+    "dotenv": "^16.4.5",
+    "typescript": "^5.6.0"
+  }
+}
